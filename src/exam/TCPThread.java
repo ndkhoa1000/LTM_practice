@@ -14,9 +14,11 @@ import java.util.Scanner;
 public class TCPThread extends Thread{
     public Socket socket;
     public String ServerPassword;
-    public TCPThread (Socket reqSocket, String password){
+    public String filepath;
+    public TCPThread (Socket reqSocket, String password, String filepath){
         this.socket = reqSocket;
         this.ServerPassword = password;
+        this.filepath = filepath;
     }
 
     @Override
@@ -33,7 +35,7 @@ public class TCPThread extends Thread{
             System.out.println("[TCP_] password tu client: "+password);
 
             if (password.equals(ServerPassword)){
-                File f = new File("D:\\Code\\java\\LTM_practice\\testFile\\emotional.mp3");
+                File f = new File(filepath);
                 if(f.isFile()){
                     int filesize = (int)f.length();
                     printer.println(filesize);
