@@ -12,7 +12,7 @@ import java.net.*;
 import java.util.Scanner;
 
 public class Client {
-    public static String saveFilePath = "D:\\Code\\java\\LTM_practice\\testFile\\result.mp3"; // chinh sua noi luu file (savefile);
+    public static String saveFilePath = "testFile\\result.mp3"; // chinh sua noi luu file (savefile);
     @SuppressWarnings("ConvertToTryWithResources")
     public static void main(String[] args) {
         try (DatagramSocket UDPsocket = new DatagramSocket()) {

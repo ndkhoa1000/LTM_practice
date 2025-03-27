@@ -9,7 +9,7 @@ public class Server {
         int UDPport = 2000; //chinh sua cong UDP tai day
         int TCPport = 4000; // chinh sua cong TCP tai day
         String password = "strongpassword"; // chinh sua password tai day
-        String filepath = "D:\\Code\\java\\LTM_practice\\testFile\\emotional.mp3"; // chinh sua filepath tai day
+        String filepath = "testFile\\emotional.mp3"; // chinh sua filepath tai day
 
         //chay 2 thread UDP va TCP rieng biet, 
         //sua lai logic tai TCPThread.java va UDPThread.java
